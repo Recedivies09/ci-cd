@@ -1,0 +1,6 @@
+- There's many tools for setup the CI/CD, e.g GitHub Actions, Gitlab pipelines CI, Jenkins. In this case, I think cloud-based CI such as GitHub Actions and Gitlab CI is probably best, because it just only one team, and then we don't need to worry about the setup of the environment. Doing that usually involves putting a file in repository and then telling the CI system to read the file.
+
+- Besides the Jenkins that self-hosted type and GitHub Actions that cloud service type, there's like Gitlab pipelines CI a cloud-based that make life easier to setup the CI/CD. After that, there's circleci, TeamCity, Travis CI as a self-hosted, etc.
+
+- depends on what we need against our project. If a small or medium project that doesn't have any special requirements, a cloud-service based is best, because the configuration is simple and we don't need to configuring complicated to setting up the CI/CD system. For smaller projects especially, this should be cheaper.
+But if a large projects, a self-hosted is probably a way to go, with complicated to set up, I think it is worth it to do self-hosted CI/CD because it's very flexible and there's often quite a bit of boilerplate/template code involved to get builds working.
